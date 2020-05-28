@@ -1742,7 +1742,7 @@ void bt_mesh_conn_unref(struct bt_mesh_conn *conn)
 
 void bt_mesh_gatt_init(void)
 {
-    BTA_GATT_SetLocalMTU(GATT_DEF_BLE_MTU_SIZE);
+    BTA_GATT_SetLocalMTU(69);
 
 #if (CONFIG_BLE_MESH_NODE && CONFIG_BLE_MESH_PB_GATT) || \
     CONFIG_BLE_MESH_GATT_PROXY_SERVER
